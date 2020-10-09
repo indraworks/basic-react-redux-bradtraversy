@@ -1,0 +1,19 @@
+
+//kebutuhan redux
+npm i redux react-redux redux-thunk redux-devtools-extension 
+buat reduxstore buat dibawah src file namanya:store.js
+isi file store dgn bolilerplate:
+
+import {createStore,applyMiddleware} from 'redux';
+import {composeWithDevTools} from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers'; //rupakan indux dari smua ./reducers
+//digabung di index.js di bawah directory ./reducers
+
+const initialState = {}
+const middleware =[thunk] //brupa default array middleware
+
+
+
+
+
